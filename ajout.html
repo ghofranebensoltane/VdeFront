@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout Etudiant</title>
+    <link rel="stylesheet" href="ajout_styles.css" />
+</head>
+<body>
+
+ <h1 class="h1">Ajouter un étudiant</h1>
+
+  <form class="form" id="formAjouter">
+    <label class="label" for="nom"> Nom:</label>
+    <input class="input" type="text" name="nom" id="nom" placeholder="Entrez votre nom" required />
+
+    <label class="label" for="prenom"> Prénom: </label>
+    <input class="input" type="text" name="prenom" id="prenom" placeholder="Prénom" required />
+
+    <label class="label"  for="age"> Date de naissance: </label>
+    <input class="input" type="date" name="age" id="age" placeholder="Votre date de naissance" required />
+
+    <label class="label"  for="nationalite"> Nationalité: </label>
+    <input class="date"  type="text" name="nationalite" id="nationalite" placeholder="Entrez votre nationalite" required>
+
+    <label  class="label" for="email"> email: </label>
+    <input  class="email" type="email" name="email" id="email" placeholder="exemple@email.com" required>
+      
+    <label class="label"  for="specialite">Cours :</label>
+    <select class="select" id="specialite" name="specialite" required>
+         <option value="">-- Choisissez une speciali --</option>
+          <option value="devops">DevOps</option>
+          <option value="nt">Nouvelles Technologies</option>
+          <option value="admin sys">Admin Systeme</option>
+    </select>   
+      
+
+    <button class="button" type="submit">Ajouter</button>
+    <button class="btnRetour" id="btnRetour" type="button">Retour à la liste</button>
+  </form>
+
+
+  
+  <script src="ajout.js"></script>  
+</body>
+
+</html>

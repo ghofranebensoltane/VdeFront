@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #e8f0fe;
+}
+
+h1 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#btnAjouter {
+  padding: 10px 15px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#btnAjouter:hover {
+  background-color: #1f8a47;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f2f9ff;
+}
+td {
+  white-space: nowrap;
+}
+
+button {
+  padding: 6px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button.btnModif {
+  background-color: #f39c12;
+}
+
+button.btnModif:hover {
+  background-color: #d67e00;
+}
+
+button.btnSuppr {
+  background-color: #e74c3c;
+}
+
+button.btnSuppr:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Etudiant</title>
+    <link rel="stylesheet" href="modif_styles.css">
+</head>
+<body>
+  <h1 class="h1">Modifier un étudiant</h1>
+  <form class="form" id="formModifier">
+    <label class="label">Nom:</label>
+    <input class="input" type="text" name="nom" id="nom" required>
+
+    <label class="label">Prénom:</label>
+    <input class="input" type="text" name="prenom" id="prenom" required>
+
+    <label class="label">Date de naissance:</label>
+    <input class="date" type="date" name="age" id="age" required>
+
+    <label class="label">Nationalité:</label>
+    <input  class="input" type="text" name="nationalite" id="nationalite" required>
+
+    <label class="label">Email:</label>
+    <input class="email" type="email" name="email" id="email" required>
+
+    <label class="label">Spécialité:</label>
+    <select class="select" name="specialite" id="specialite" required>
+      <option value="">-- Choisissez --</option>
+      <option value="devops">DevOps</option>
+      <option value="nt">Nouvelles Technologies</option>
+      <option value="admin sys">Admin Système</option>
+    </select>
+
+    <button class="button" type="submit">Mettre à jour</button>
+    <button class="btnRetour" type="button" id="btnRetour">Retour</button>
+  </form>
+
+  <script src="modifier.js"></script>
+</body>
+
+</body>
+</html>
