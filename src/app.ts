@@ -1,22 +1,34 @@
-console.log('hello');
-type User ={firstname: string, lastname: string}
+console.log("typescript ok")
 
+let taskInput = document.getElementById("taskInput") as HTMLInputElement;
+let btnAdd = document.getElementById("addTask") as HTMLButtonElement;
+let taskList = document.getElementById("taskList") as HTMLUListElement;
 
+function addTask(): void{
+    const taskText: string =taskInput.value.trim();
 
-
-
-
-
-const compteur = document.getElementById('compteur')!   //ou bien as HTMLElement (pour que compteur ne soit pas null)
-let i=0;
-
-const increment = (e: Event) =>{
-    e.preventDefault();
-    i++
-    const span = compteur?.querySelector('span')
-    if(span){
-        span.innerText =i.toString();
+    if(taskText ===""){
+        alert("Veuiller entrer une tache !");
+        return;
     }
+    
+    const li: HTMLLIElement = document.createElement("li");
+    li.textContent=taskText;
+
+    const deleteBtn: HTMLButtonElement =document.createElement("button");
+    deleteBtn.textContent ="supprimer";
+    deleteBtn.style.marginLeft="10px";
+
+    deleteBtn.addEventListener("click",()=>{
+        taskList.removeChild(li);
+    });
+
+    li.appendChild(deleteBtn);
+    taskList.appendChild(li);
+    taskInput.value="";
 }
 
-compteur?.addEventListener('click', increment) 
+btnAdd.addEventListener("click", (event:MouseEvent)=>{
+    addTask();
+
+})

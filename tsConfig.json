@@ -2,7 +2,6 @@
     "compilerOptions": {
         "outDir": "dist",
         "strict": true,
-        "noEmitOnError": false,
         "target": "ESNext"
     },
     "files":[
